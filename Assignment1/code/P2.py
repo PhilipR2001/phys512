@@ -7,10 +7,8 @@ def ndiff(fun,x,full=False):
 
 	delta=1e-2
 
-	fthird=(fun(x+2*delta)-fun(x-2*delta)+2*fun(x-delta)-2*f(x+delta))/(2*delta**3)
+	fthird=(fun(x+2*delta)-fun(x-2*delta)+2*fun(x-delta)-2*fun(x+delta))/(2*delta**3)
 	
-	print(fthird)
-
 	if fthird==0:
 		fthird=fun(x)
 
@@ -25,4 +23,5 @@ def ndiff(fun,x,full=False):
 
 	else:
 		return fprime
+
 
