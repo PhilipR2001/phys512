@@ -33,8 +33,8 @@ p=np.zeros(6)
 p_errs=p.copy()
 
 for i in range(len(p)):
-	p[i]=np.mean(chain[:500,i+1])
-	p_errs[i]=np.std(chain[:500,i+1])
+	p[i]=np.mean(chain[500:,i+1])
+	p_errs[i]=np.std(chain[500:,i+1])
 
 print(p)
 print(p_errs)
